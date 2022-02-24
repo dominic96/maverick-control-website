@@ -1,0 +1,49 @@
+<div class="userContainer p-grid p-fluid">
+    <p-toast position = "top-right"></p-toast>
+
+    <!--SideBar Housing Accout Icon , username and other options-->
+    <p-sidebar [(visible)] = "sideBar"
+               [style] = "{'width': '20px'}"
+               class="sideBar p-d-flex p-d-column">
+        
+        <!--Icon and Username containter-->
+        <div class="p-col-12" id="avatarContainer">
+                <p-avatar icon = "pi pi-user"
+                          styleClass = "p-mr-2"
+                          size = "xlarge"
+                          shape = "circle">
+                </p-avatar>
+                <p>{{user.email}}</p>
+        </div>
+        <div class="p-col-12" id="logoutButton">
+            <button pButton
+                    type="button"
+                    label = "Logout"
+                    icon = "pi pi-sign-out"
+                    iconPos = "left"
+                    class="p-button-text p-text-left"
+                    (click) = "logout()">
+
+            </button>
+        </div>
+    </p-sidebar>
+
+    <!--Top Bar with Menu Option and Title for the Page-->
+    <div class="p-col-12 p-grid topBar">
+
+        <!--Menu Button-->
+        <div class="p-col-4 menuOption">
+            <button pButton
+                    type="button"
+                    class="p-button-text"
+                    (click) = "sideBar = true"
+                    icon = "pi pi-bars"
+                    iconPos = "left"
+                    label = "Menu">
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

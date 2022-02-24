@@ -1,0 +1,91 @@
+<div class="loginContainer">
+
+    <!--Displays a pop-up message with information about a 
+        processs
+    -->
+    <p-toast position = "top-right"></p-toast>
+
+    <!--Card containing all the login elements-->
+    <p-card header="Enter Credentials to Login"
+            [style] = "{width: '500px', 'margin': '120px'}"
+            styleClass = "p-card-shadow"
+            class="p-fluid p-grid p-jc-center">
+        
+        <ng-template pTemplate = "header" class="titleContainer">
+            <div class="titleContainer">
+                <p class="title">Web Application</p>
+            </div>      
+        </ng-template>
+
+        <!--First column in the grid inside the card containing the login form elements-->
+        <div class="p-col-12 p-fluid p-jc-center" id="formContainer">
+
+            <!--The form layout is basically a grid divided into rows and columns-->
+            <form class="p-grid p-fluid p-jc-center"
+                  [formGroup] = "loginForm"
+                  (ngSubmit) ="login()">
+
+                  <!--the first row contains a grid which contains the input fields as rows inturn -->
+                  <div class="p-col-8 " id="credentialsContainer">
+                      <div class="p-grid p-fluid " id="credentialsGrid">
+
+                          <!--Email-->
+                          <div class="p-col-12 " id="email">
+                              <span class="p-input-icon-right">
+                                <i class="pi pi-envelope"></i>
+                                <input type="text"
+                                       pInputText
+                                       formControlName = "email"
+                                       placeholder="email address">
+                              </span>
+                          </div>
+
+                          <!--Password-->
+                          <div class="p-col-12" id=" password">
+                              <span class="p-input-icon-right">
+                                <i class="pi pi-key"></i>
+                                <input type="text" 
+                                       formControlName="password" 
+                                       placeholder = "password"
+                                       pInputText>
+                              </span>
+                          </div>
+
+                          <!--Login Button-->
+                          <div class="p-col-4 p-offset-4" id="loginButton">
+                              <button pButton pRipple type="submit"
+                                      label = "Login"
+                                      class = "p-button-outlined"
+                                      icon = "pi pi-angle-double-right"
+                                      iconPos = "right">
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+            </form>
+
+            <!--SignUp Link-->
+            <div class="p-col-6 p-offset-3">
+                <button pButton type="button"
+                        label="SignUp for an Account"
+                        class="p-button-link"
+                        icon = "pi pi-user-plus"
+                        style="width: 270px;"
+                        (click) = "signUp()">
+                </button>
+            </div>
+
+            <!--Progress Bar-->
+            <div *ngIf = "loading">
+                <p-progressBar mode = "indeterminate"
+                             [style] = "{'height':'6px'}"
+                             label = "logging in User please wait...">
+                    
+                </p-progressBar>
+                <p class="progressBarText">Logging in User, please wait...</p>
+            </div>
+
+        </div>
+    </p-card>
+
+</div>
