@@ -34,6 +34,7 @@ import { AppComponent } from './app.component';
 
 import { AuthenticationModule } from './authentication/authentication.module';
 import { UserModule } from './user/user.module';
+import { LoadUserResolver } from './utility/load-user.resolver';
 
 
 
@@ -64,6 +65,7 @@ import { UserModule } from './user/user.module';
     AuthenticationModule,
     UserModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [LoadUserResolver]
 })
 export class AppModule { }

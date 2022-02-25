@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { AuthenticationService } from '../authentication/authentication.service';
 import { User } from './user';
@@ -18,7 +19,8 @@ export class UserComponent implements OnInit {
 
   constructor(private userService: UserService,
               private authenticationService: AuthenticationService,
-              private messageService: MessageService) {
+              private messageService: MessageService,
+              private route: ActivatedRoute) {
      this.user = {userId: 0, firstname: '', lastname: '', email: '', type: '', token: ''};
    }
 
@@ -34,6 +36,14 @@ export class UserComponent implements OnInit {
    * Initiates Feed if any is available
    */
   private loadUserAccount(): void {
+
+    this.route.data.subscribe((_data) => {
+       const _user: User = _data['user'];
+       console.log(`user with email: ${_user.email} retrieved`)
+    },
+    (err) => {
+      console.log(`Error loading user account: ${err.error.message}`)
+    } )
     this.userService.loadUserAccount(this.authenticationService.userValue.userId)
                       .subscribe(
                         (user) => {

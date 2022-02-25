@@ -66,12 +66,13 @@ export class LoginComponent implements OnInit {
                                     this.statusMessage = `Logged in User with email: ${user.email}`;
                                     console.log(this.statusMessage);
                                     this.showSuccess();
-                                    this.router.navigate(['user']);
+                                   
+                                    this.router.navigate(['user'], {queryParams : {email: user.email}});
 
                                   },
                                   (err) =>{
                                     this.statusMessage = `Failed to login User with Credentails: email: ${this.credentials.email} Error:`;
-                                    console.log(this.statusMessage + err.error.message);
+                                    console.log(this.statusMessage + err);
                                     
                                     this.showError();
                                   }

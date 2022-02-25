@@ -16,7 +16,7 @@ export class AuthenticationService {
 
   private userSubject: BehaviorSubject<User>;
   private  user: Observable<User>;
-  private baseUrl = `${environment.apiUrl}/itravel/rest/users`;
+  private baseUrl = `${environment.apiUrl}`;
 
    //options header
    httpOptions = {
@@ -74,7 +74,7 @@ export class AuthenticationService {
    */
 
   public login(credentials: Credentials): Observable<User> {
-    const url = `${this.baseUrl}/login`;
+    const url = `${this.baseUrl}/login/login`;
     return this.http.post<User>(url, credentials,this.httpOptions)
                       .pipe(
                         tap( user=>{
@@ -89,6 +89,22 @@ export class AuthenticationService {
 
                         }));
 
+  }
+
+  /**
+   * loadUserAccount
+   * Loads the user account information after a successful log in 
+   */
+  public loadUserAccount(email: string | null ) : Observable<User>{
+
+    console.log("Loading Account information")
+    const url = `${this.baseUrl}/station/manager/load/account/${email}`;
+    return this.http.get<User>(url, this.httpOptions)
+                      .pipe(
+                        tap( user => {
+                          console.log(`successfuly Loaded account information Email: ${user.email}`)
+                        })
+                      )
   }
 
   public logout(): void {

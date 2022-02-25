@@ -12,11 +12,15 @@ import { ToastModule } from "primeng/toast";
 import { SidebarModule } from "primeng/sidebar";
 import { ButtonModule } from "primeng/button";
 import { AvatarModule } from "primeng/avatar";
+import { EmployeeComponent } from './employee/employee.component';
+import { AdminstratorComponent } from './adminstrator/adminstrator.component';
 
 
 @NgModule({
   declarations: [
-    UserComponent
+    UserComponent,
+    EmployeeComponent,
+    AdminstratorComponent
   ],
   imports: [
     CommonModule,
