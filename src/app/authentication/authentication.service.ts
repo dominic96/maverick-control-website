@@ -94,14 +94,6 @@ export class AuthenticationService {
 
   }
 
-  /**
-   * loadb
-   *  
-    */
-  public load(user: User): Observable<HttpResponse<User>> {
-    
-    return this.http.post<User>(this.baseUrl,user, {observe: 'response'});
-  }
 
   /**
    * loadUserAccount
@@ -122,9 +114,12 @@ export class AuthenticationService {
   }
 
   public logout(): void {
+
     localStorage.removeItem('user');
     this.userSubject.next({userId: 0, firstname: '',lastname: '', email: '', type: '', token: ''});
     this.loginPage();
+
+    //implemment this to send a logout request to the server 
   }
 
   private handleError(error: HttpErrorResponse) {
