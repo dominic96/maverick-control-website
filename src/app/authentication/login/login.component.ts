@@ -61,18 +61,23 @@ export class LoginComponent implements OnInit {
     this.authenticationService.login(this.credentials)
                                 .pipe(first(), finalize( ()=> this.loading = false))
                                 .subscribe(
-                                  (user) => {
-                                    this.user = user;
-                                    this.statusMessage = `Logged in User with email: ${user.email}`;
+                                  (resp) => {
+                                    this.user = { ...resp.body!};
+                                    //this.statusMessage = `Logged in User with email: ${user.email}`;
+                                    const keys = resp.headers.keys();
+                                    console.log("keys:: " + keys.length)
+                                   
                                     console.log(this.statusMessage);
                                     this.showSuccess();
                                    
-                                    this.router.navigate(['user'], {queryParams : {email: user.email}});
+                                    this.router.navigate(['user'], {queryParams : {email: this.user.email}});
 
                                   },
-                                  (err) =>{
-                                    this.statusMessage = `Failed to login User with Credentails: email: ${this.credentials.email} Error:`;
-                                    console.log(this.statusMessage + err);
+                                  (err: Error) =>{
+                                    this.statusMessage = `Failed to login User with Credentails: email: ${this.credentials.email}:`;
+                                    console.log(this.statusMessage + err.message);
+                                    console.error("login error", err.message);
+                                    
                                     
                                     this.showError();
                                   }

@@ -44,20 +44,6 @@ export class UserComponent implements OnInit {
     (err) => {
       console.log(`Error loading user account: ${err.error.message}`)
     } )
-    this.userService.loadUserAccount(this.authenticationService.userValue.userId)
-                      .subscribe(
-                        (user) => {
-                          this.user = user;
-                          this.statusMessage = 'loading account information...' ;
-                          console.log(`${this.statusMessage} for user with email: ${this.user.email}`);
-                          this.showSuccess();
-                        },
-                        (err) =>{
-                          this.statusMessage = "Failed to load account information";
-                          console.log(`${this.statusMessage} :: ${err.error.statusText}`);
-                          this.showError();
-                        }
-                      )
 
   }
 

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, throwError } from 'rxjs';
 import { User } from '../user/user';
 import { Router } from '@angular/router';
 import { Credentials } from './credentials';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { map, tap } from "rxjs/operators";
+import { catchError, map, tap } from "rxjs/operators";
 
 
 @Injectable({
@@ -73,22 +73,34 @@ export class AuthenticationService {
    * @requires Credentials
    */
 
-  public login(credentials: Credentials): Observable<User> {
+  public login(credentials: Credentials): Observable<HttpResponse<User>> {
     const url = `${this.baseUrl}/login/login`;
-    return this.http.post<User>(url, credentials,this.httpOptions)
+    return this.http.post<User>(url, credentials, {observe: 'response'})
                       .pipe(
-                        tap( user=>{
-                          console.log(`Successfuly Logged in User with Email: ${user.email}`)
+                        tap( resp =>{
+                          //console.log(`Successfuly Logged in User with Email: ${user.email}`)
+                          const keys = resp.headers.keys();
+  
+                          console.log("recovered headers" + keys.length)
+                          keys.forEach( (key) => console.log("header key " + key + " "))
+
+                          //get user from body and set user into the local storage and userSubject
+                          let _user: User  = {...resp.body!};
+                          this.userSubject.next(_user);
+                          localStorage.setItem('user', JSON.stringify(_user));
+                          
                         }),
-                        map( user =>{
+                        catchError(this.handleError));
 
-                          //set user into the local storage
-                          localStorage.setItem('user', JSON.stringify(user));
-                          this.userSubject.next(user);
-                          return user;
+  }
 
-                        }));
-
+  /**
+   * loadb
+   *  
+    */
+  public load(user: User): Observable<HttpResponse<User>> {
+    
+    return this.http.post<User>(this.baseUrl,user, {observe: 'response'});
   }
 
   /**
@@ -103,14 +115,32 @@ export class AuthenticationService {
                       .pipe(
                         tap( user => {
                           console.log(`successfuly Loaded account information Email: ${user.email}`)
-                        })
-                      )
+                        }),
+                        catchError(this.handleError)
+                        
+                      );
   }
 
   public logout(): void {
     localStorage.removeItem('user');
     this.userSubject.next({userId: 0, firstname: '',lastname: '', email: '', type: '', token: ''});
     this.loginPage();
+  }
+
+  private handleError(error: HttpErrorResponse) {
+    
+    if (error.status === 0) {
+      //client side or network error 
+      console.error("An error occured: ", error.error);
+      
+    }else{
+      //backend responded with an unsuccessful error code
+      console.error(`Server returned error code: ${error.status}, and Body: `, error.error);
+      
+    }
+
+    //Return an Observable with a User friendly error message
+    return throwError(() => new Error("Something went wrong, Please try again in a few minutes"));
   }
   
 }
