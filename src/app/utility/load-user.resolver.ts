@@ -4,7 +4,7 @@ import {
   RouterStateSnapshot,
   ActivatedRouteSnapshot
 } from '@angular/router';
-import { Observable, of } from 'rxjs';
+import { Observable, of, throwError } from 'rxjs';
 import { AuthenticationService } from '../authentication/authentication.service';
 import { User } from '../user/user';
 
@@ -23,6 +23,14 @@ export class LoadUserResolver implements Resolve<User> {
 
     let email: string | null = route.queryParamMap.get("email");
     console.log(`Resolving Account with email: ${email}`)
-    return this.authenticationService.loadUserAccount(email);
+    try {
+      
+      return this.authenticationService.loadUserAccount(email);
+
+    } catch (error) {
+      console.log("failed to load user")
+      return throwError("Failed to Load User ");
+    }
+   
   }
 }

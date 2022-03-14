@@ -37,13 +37,17 @@ export class UserComponent implements OnInit {
    */
   private loadUserAccount(): void {
 
+  
     this.route.data.subscribe((_data) => {
        const _user: User = _data['user'];
        console.log(`user with email: ${_user.email} retrieved`)
     },
     (err) => {
-      console.log(`Error loading user account: ${err.error.message}`)
+      console.log(`Error loading user account: ${err}`)
+      console.log(err);
     } )
+
+    console.log("user component")
 
   }
 

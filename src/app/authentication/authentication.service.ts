@@ -51,10 +51,25 @@ export class AuthenticationService {
    */
   public checkLogin(): void{
 
+    //this method doesnt work properly in the case that an error encountered 
+    // the catch phrase is failing to catch the error 
+  
       if (Object.keys(this.userValue).length == 0) {
         console.log("No User Currently Logged In");
         this.loginPage();
-      }     
+      } else {
+        console.log("attempting to reload user account")
+        try {
+          console.log("trying")
+          this.router.navigate(['user'], {queryParams : {email: this.userValue.email}});
+          console.log("tried");
+
+        } catch (error) {
+
+          console.log("caught error");
+          this.loginPage();
+        }
+      }   
 
   }
 
@@ -109,7 +124,6 @@ export class AuthenticationService {
                           console.log(`successfuly Loaded account information Email: ${user.email}`)
                         }),
                         catchError(this.handleError)
-                        
                       );
   }
 
@@ -122,8 +136,10 @@ export class AuthenticationService {
     //implemment this to send a logout request to the server 
   }
 
-  private handleError(error: HttpErrorResponse) {
-    
+   handleError(error: HttpErrorResponse) {
+      //this functions throws an error that i'm fqiling to catch 
+      // this is a bug
+
     if (error.status === 0) {
       //client side or network error 
       console.error("An error occured: ", error.error);
@@ -131,6 +147,13 @@ export class AuthenticationService {
     }else{
       //backend responded with an unsuccessful error code
       console.error(`Server returned error code: ${error.status}, and Body: `, error.error);
+
+      if (error.status === 401 ) {
+        //this.router.navigate(['authenticate/login']);
+       // console.error("User unauthorized redirecting to login page");
+        //this.router.navigate(['authenticate/login']);
+        
+      }
       
     }
 
