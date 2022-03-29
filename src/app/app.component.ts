@@ -11,7 +11,7 @@ import { AuthenticationService } from './authentication/authentication.service';
 export class AppComponent {
 
  
-  title = 'webapp-template';
+  title = 'Maverick Control Systems';
 
   constructor(private authenticationService: AuthenticationService,
                private router: Router) {
@@ -20,7 +20,7 @@ export class AppComponent {
 
   ngOnInit(): void{
     console.log("Initializing Application");
-    this.authenticationService.checkLogin();
+    this.router.navigate(['/home'])
 
   }
 

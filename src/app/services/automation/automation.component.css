@@ -1,0 +1,127 @@
+header{
+    /*position: fixed;*/
+    text-align: center;
+    border-top: 1px  solid lightgrey;
+    border-bottom: 1px  solid lightgrey;
+    background-color: #424242;
+    font-size: xx-large;
+    color: #607d8b;
+    padding-left: -5%;
+    margin-top: 16px;
+
+}
+
+/****************** nagivation styles *************************/
+
+a.quickLink{
+    min-width: 200px;
+    display: inline-flex;
+}
+
+p{
+    display: inline-flex;
+    padding-top: 20px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+
+div.linkImage{
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    margin-right: 10px;
+    background-color: aliceblue;
+    display: inline-flex;
+    background-image: url("../../../assets/images/thumbnails/control-thumbnail.png");
+
+}
+
+div.control{
+    background-image: url("../../../assets/images/thumbnails/control-thumbnail.png");
+}
+
+div.automation{
+    background-image: url("../../../assets/images/thumbnails/automation-thumbnail.png");
+
+}
+
+div.panel{
+    background-image: url("../../../assets/images/thumbnails/electrical-panel-thumbnail.png");
+
+}
+
+div.engineering{
+    background-image: url("../../../assets/images/thumbnails/engineering-thumbnail.png");
+}
+
+/*******************Section Styles *************************************/
+
+div.infoCard{
+    margin-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid #424242;
+    background-color: lightgray;
+
+}
+
+div.imageBox{
+    border-radius: 10px;
+    box-shadow: #607d8b;
+    margin-right: 48px;
+    margin-left: 10px;
+    /*padding-top: 20%;*/
+    
+}
+
+div.nameBox{
+   /* background-color: #b9b7b7;*/
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    opacity: 0.5;
+    color: #607d8b;
+
+    margin-bottom: 20px;
+
+}
+
+div.infoBox{
+    padding-top: 5%;
+    text-align: justify;
+    font-size: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: #424242;
+    max-width: 600px;
+    min-width: 500px;
+}
+
+div.home{
+    background-image: url('../../../assets/images/maverick-smart-home-pic-small.jpg');
+    width: 400px;
+    height: 300px;
+}
+
+div.hotel{
+    background-image: url("../../../assets/images/maverick-home-automation-pic-small.jpg");
+    width: 400px;
+    height: 300px;
+}
+
+div.office{
+    background-image: url("../../../assets/images/building-automation-home-300x182.png");
+    width: 400px;
+    height: 300px;
+}
+
+div.testGrid{
+    padding-top: 10%;
+}
+
+div.testBox{
+    min-width: 400px;
+    width: 600px;
+}
+

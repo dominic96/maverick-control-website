@@ -18,6 +18,7 @@ import { DataViewModule } from "primeng/dataview";
 import { PanelModule } from "primeng/panel";
 import { RippleModule } from "primeng/ripple";
 import { DialogModule } from "primeng/dialog";
+import { CardModule } from "primeng/card";
 
 /**
  * Project Modules
@@ -34,8 +35,16 @@ import { AppComponent } from './app.component';
 
 import { AuthenticationModule } from './authentication/authentication.module';
 import { UserModule } from './user/user.module';
+import { ServicesModule } from "./services/services.module";
 import { LoadUserResolver } from './utility/load-user.resolver';
 import { JwtInterceptor } from './utility/jwt.interceptor';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HomePageComponent } from './home-page/home-page.component';
+
+import { ProductsComponent } from './products/products.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -44,6 +53,12 @@ import { JwtInterceptor } from './utility/jwt.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
+    LandingPageComponent,
+    NotFoundComponent,
+    HomePageComponent,
+    ProductsComponent,
+    ContactInfoComponent,
+    AboutUsComponent,
  
   ],
   imports: [
@@ -63,8 +78,10 @@ import { JwtInterceptor } from './utility/jwt.interceptor';
     PanelModule,
     RippleModule,
     DialogModule,
+    CardModule,
     AuthenticationModule,
-    UserModule
+    UserModule,
+    ServicesModule
   ],
   bootstrap: [AppComponent],
   providers: [LoadUserResolver, {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor,multi: true}]

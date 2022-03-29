@@ -1,0 +1,9 @@
+div.servicesListContainer{
+    padding-top: 5%;
+}
+
+div.icon{
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+}

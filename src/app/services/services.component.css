@@ -1,0 +1,69 @@
+
+header, footer{
+    padding-top: 24px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #607d8b;
+    
+}
+
+footer{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #607d8b;
+}
+
+section.moreServices{
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+div.serviceCard{
+    width: 350px;
+    height: 300px;
+    margin-left: 5px;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    background-color: lightslategray;
+    
+
+}
+p.serviceGroupName{
+    width: 350px;
+    opacity: 0.5;
+    color: white;
+    font-size: 24px;
+    margin-top: 0px;
+    padding: 0px 0px;
+    margin-left: -8px;
+    border-radius: 5px;
+    background-color: grey;
+
+}
+
+p.name{
+    opacity: 0.5;
+    width: 250px;
+    font-size: 20px;
+    margin-top: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    text-align: center;
+    color: aliceblue;
+    background-color: grey;
+    border: 1px solid white;
+
+}
+
+div.biometrics{
+    background-image: url("../../assets/images/services/biometrics-services-pic-dark.png");
+}

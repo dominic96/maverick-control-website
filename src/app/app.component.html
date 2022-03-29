@@ -1,5 +1,52 @@
-<div class="appContainer">
-    <router-outlet></router-outlet>
+<div class="landingPageContainer p-grid p-fluid p-jc-between">
+    <!--Logo container-->
+    <div class="headerContainer p-col-12 p-grid p-fluid p-jc-between">
+        <div class="logoContainer p-col-4">
+
+        </div>
+        
+        <!--Navigation Links-->
+        <nav class="menuButtonsContainer p-grid p-fluid p-col-7  p-jc-between">
+            <a routerLink = "/home" routerLinkActive = "active" class="p-col-2">
+                Home
+            </a>
+
+            <a routerLink="/services/engineering" routerLinkActive = "active" class="p-col-2" >
+                Engineering
+            </a>
+
+            <a routerLink = "/services/automation" routerLinkActive = "active" class="p-col-2">
+                Automation
+            </a>
+
+            <a routerLink="/services/security" routerLinkActive = "active" class="p-col-2">
+                Security
+            </a>
+
+            <a  routerLink = "/about/maverick" routerLinkActive = "active" class="p-col-2">
+                About Us
+            </a>
+
+
+        </nav>
+
+       
+    </div>
+
+    <div class="contentContainer p-col-12 p-grid">
+        <div>
+            <!--Routing to various Elements -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <footer >
+        <p>footer</p>
+    </footer>
+    
 </div>
+
+
+
 
 

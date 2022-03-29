@@ -1,0 +1,81 @@
+div.homeContainer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+div.imageContainer{
+    background-image: url(../../assets/images/maverick-homepage-background-2.png.jpg);
+    width: 1315px;
+    height: 720px;
+    padding-top: 10%;
+    
+}
+
+div.parentContainer{
+    padding: 0% 0%;
+    margin: 0% 0%;
+}
+
+p.welcome, p.description{
+    font-size: small;
+    color: lightgrey;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+p.name{
+    font-size: 5em;
+    color: lightgray;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgray;
+   /* border-width: 1px;
+    border-color: aliceblue;
+    border-style: solid;*/
+}
+ 
+
+div.info{
+    text-align: center;
+    height: 50%;
+}
+
+div.cardIcon{
+    height: 100px;
+    width: 100px;
+   /* background-color: grey;*/
+}
+
+div.cardTitle{
+    text-align: center;
+    /*padding-top: 10%;*/
+    padding: 10% 0% 0% 0%;
+    font-weight: 600;
+    font-size: large;
+    color: #757575;
+}
+
+div.cardDescription{
+    text-align: justify;
+    font-size: small;
+    /*font-weight: lighter;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p.header{
+    text-align: center;
+    padding: 0px 0px;
+    margin: 0% 0%;
+    font-size: x-large;
+    font-weight: 500;
+    color: #757575;
+    
+}
+
+div.more{
+    text-align: center;
+}

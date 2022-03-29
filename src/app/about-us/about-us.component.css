@@ -1,0 +1,17 @@
+div.aboutUsContainer{
+    padding-top: 5%;
+    background-color: #8b8b8b;
+    width: 1293px;
+    height: 700px;
+}
+
+header{
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid white;
+}
+
+div.contactInfoContainer{
+    border-left: 1px solid white;
+}
