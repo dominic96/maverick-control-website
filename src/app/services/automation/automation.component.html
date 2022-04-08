@@ -2,28 +2,40 @@
 
     <nav class="p-col-12 p-grid p-fluid p-jc-center navigationPanel">
            
-        <a href="" class="p-col-3 quickLink">
-            <div class="linkImage control">
+        <a routerLink = "/services/automation" 
+            class="p-col-3 quickLink"
+            routerLinkActive = "active" >
 
-            </div>
-            <p>Instrumentation and Control</p>
-        </a>
-
-        <a href="" class="p-col-3 quickLink">
             <div class="linkImage automation">
 
             </div>
-            <p>Motor Control and Automation</p>
+            <p>Home & Building Automation</p>
         </a>
 
-        <a href="" class="p-col-3 quickLink">
-            <div class="linkImage panel">
+        <a routerLink = "/services/engineering"  
+            class="p-col-3 quickLink"
+            routerLinkActive = "active">
+
+            <div class="linkImage control">
 
             </div>
-            <p>Electrical LT Reticulation</p>
+            <p>Instrumentation & Process Control</p>
         </a>
 
-        <a href="" class="p-col-3 quickLink ">
+        <a routerLink = "/services/security" 
+            class="p-col-3 quickLink"
+            routerLinkActive = "active">
+
+            <div class="linkImage security">
+
+            </div>
+            <p>Safety & Security</p>
+        </a>
+
+        <a routerLink ="/services/engineering" 
+            class="p-col-3 quickLink "
+            routerLinkActive = "active">
+            
             <div class="linkImage engineering">
 
             </div>
@@ -42,7 +54,7 @@
 
 
     <!--Smart Home  -->
-    <div class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+    <div class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="smartHome">
         <div class="p-col-6 imageBox home">
             
         </div>
@@ -60,7 +72,7 @@
     </div>
 
      <!--Smart Hotel  -->
-     <div class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+     <div class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="smartHotel">
         <div class="p-col-6 imageBox hotel">
             
         </div>
@@ -77,7 +89,7 @@
     </div>
 
     <!--Smart Office  -->
-    <div class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+    <div class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="smartOffice" >
         <div class="p-col-6 imageBox office">
             
         </div>

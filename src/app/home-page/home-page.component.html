@@ -1,118 +1,264 @@
 <div class="homeContainer p-grid  p-fluid p-jc-center">
-    
-    <div class="imageContainer p-col-12 p-grid p-fluid p-jc-center">
-       <div class="info p-col-8 p-jc-center">
-           <p class="welcome">
-               Welcome to      
-           </p>
-           <div class="name">
-                <p class="name"> Maverick Control Systems</p>
 
-           </div>
-           <p class="description">
-               We at Marverick (MCS) speciliaze in providing innovative Internet of Things (IoT) solutions to Homes, Industrial and Mining sites, Commercial
+    
+ 
+    <!-- Contains the welcome note , name and brief info about company -->
+    <section class="info">
+
+        <!-- Location Info -->
+    <section class="p-col-12 p-grid p-fluid contact">
+
+        <div class="p-col-6 p-grid location">
+            <div class="p-col-4 locationIcon">
+                <img src="../../assets/images/home/contact/location-icon.png" alt="location icon">
+            </div>
+            <div class="p-col-8 address">
+                112 Seke Road, Graniteside, Harare
+            </div>
+        </div>
+
+        <div class="p-col-6 p-grid phone">
+            <div class="p-col-4 phoneIcon">
+                <img src="../../assets/images/home/contact/phone-icon-2.png" alt="">
+            </div>
+
+            <div class="p-col-8 phoneNumber">
+                +263784428659, +263771227689
+            </div>
+        </div>
+    </section>
+
+        <p class="welcome"> Welcome to</p>
+        <p class="name">Maverick Control Systems</p>
+        <p class="welcome2"> Official Website</p>
+
+    
+        <p class="summaryMcs">
+            We at Marverick (MCS) speciliaze in providing innovative Internet of Things (IoT) solutions to Homes, Industrial and Mining sites, Commercial
                and Government buildings. Combining our Electrical Engineering knowledge and Technology-domain prowess we are able to undertake turnkey
                project execution and proffer consulting services
-           </p>
-       </div>
-    </div>
+        </p>
+    
 
-    <p-card class="p-col-12 p-grid p-fluid p-jc-between infoCard"
-            [style] = "{ 
-                        'margin-top': '-30%', 
-                        'border-top-left-radius':'10%', 
-                        'border-top-right-radius': '10%'}">
 
-        <!-- Main  Card Header-->
-        <ng-template pTemplate = "header" class="p-col-12">
-            <p class="header">Our Services</p>
-        </ng-template>
+    </section>
 
-        <!--Card grid containing child grids that displays brief descriptions of the services offered-->
-        <div class="p-col-12 p-grid p-fluid-jc-center  parentContainer">
+    <section class="heading">
+        <p class="heading">Who We Are</p>
+    </section>
+    <!--Values Section Stores the Brief outline of mavericks core values -->
+    <section class="p-col-12 valuesSection p-grid p-fluid p-jc-center">
 
-            <!-- Child Card -->
-            <p-card styleClass = "p-card-shadow" class="p-col-4 p-grid p-fluid p-jc-between">
-                <div class="p-grid p-fluid p-jc-between">
-                    <div class="p-col-4 cardIcon">
-                        <img src="../../assets/images/maverick-eng-icon.png" alt="">
-                    </div>
-                    <div class="p-col-7 cardTitle">
-                        Engineering
-                    </div>
-                    <div class="p-col-12 cardDescription">
-                        <p>
-                            We at MCS provide Engineering services including Instrumentation and Control,
+        <div class="p-col-4 p-grid p-fluid valuesCard">
+
+            
+            <div class=" p-col-4 valuesImage">
+                <img src="../../assets/images/home/mission-icon.png" alt="mission icon">
+            </div>
+
+            <div class="p-col-8 valuesTitle">
+                Our Mission
+            </div>
+
+            <div class="p-col-12 valuesDescription">
+                Committed to providing automation for your home or business that is user
+                friendly and best fits your personal taste and priorities. 
+            </div>
+        </div>
+
+        <div class="p-col-4 p-grid p-fluid valuesCard">
+            <div class=" p-col-4 valuesImage">
+                <img src="../../assets/images/home/vision-icon.png" alt="vision icon">
+            </div>
+
+            <div class="p-col-8 valuesTitle">
+                Our Vision
+            </div>
+
+            <div class="p-col-12 valuesDescription">
+                To bring comfort, control and convenience to our customers, protecting people and profits 
+                brilliantly; becoming the industry leader and natural first choice IoT (Internet of things) 
+                solution provider.
+            </div>
+        </div>
+
+        <div class="p-col-4 p-grid p-fluid valuesCard">
+            <div class=" p-col-4 valuesImage">
+                <img src="../../assets/images/home/values-icon.png" alt="values icon">
+            </div>
+
+            <div class="p-col-8 valuesTitle">
+                Our Values
+            </div>
+
+            <div class="p-col-12 valuesDescription">
+                Integrity through transparent relationships with our clients, commitment
+                through unwavering dedication to our clients, teamwork by building a unified workforce through 
+                commitment & intergrity as well as ensuring safety for both our clients and employees
+            </div>
+        </div>
+
+    </section>
+
+    <section class="heading">
+        <p class="heading">What We Do</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="p-col-12 p-grid p-fluid servicesSection p-jc-center">
+
+        <div class="p-col-3 p-grid p-fluid serviceCard">
+            <div class="p-col-4 image">
+                <img src="../../assets/images/home/maverick-eng-icon.png" alt="">
+            </div>
+
+            <div class="p-col-8 title">
+                Engineering
+            </div>
+
+            <div class="p-col-12 description">
+                We at MCS provide Engineering services including Instrumentation and Control,
                             Automation and Control, LT reticulation and Panel Building as well as
                             Industrial Lighting.
-                        </p>
-                        <div class="more"><a routerLink="/services/engineering" >Find out more >></a></div>
-                    </div>
-                </div>
-            </p-card>
+            </div>
 
-            <!-- Child Card -->
-            <p-card styleClass = "p-card-shadow" class="p-col-4">
-                <div class="p-grid p-fluid p-jc-between">
-                    <div class="p-col-4 cardIcon">
-                        <img src="../../assets/images/maverick-home-auto-icon.png" alt="">
-                    </div>
-                    <div class="p-col-7 cardTitle">
-                        Home and Building Automation
-                    </div>
-                    <div class="p-col-12 cardDescription">
-                        <p>
-                            We also provide Home and Building Automation solutions. This includes but
-                            not limited to Smart Home Systems and Office Solutions. This involves automation
-                             of every aspect of a building including lighting, air conditioning, 
-                             motorized curtains e.t.c.
-                         </p>
-                         <div class="more"><a routerLink="/services/automation">Find out more >></a></div>
-                    </div>
-                </div>
-            </p-card>
-
-            <!-- Child Card -->
-            <p-card styleClass = "p-card-shadow" class="p-col-4">
-                <div class="p-grid p-fluid p-jc-between">
-                    <div class="p-col-4 cardIcon">
-                        <img src="../../assets/images/maverick-security-icon-1.png" alt="">
-                    </div>
-                    <div class="p-col-7 cardTitle">
-                        Security and Safety Solutions
-                    </div>
-                    <div class="p-col-12 cardDescription">
-                        <p>
-                            We also provide both software and physical security solutions for 
-                            homes, offices as well as industries. These include but not limited
-                            to CCTV surviallance, Electronic locking systems, Visitor management
-                            systems e.t.c.
-                        </p>
-                        <div class="more"><a routerLink="">Find out more >></a></div>
-                    </div>
-                </div>
-            </p-card>
-
-            <p-card styleClass = "p-card-shadow" class="p-col-4">
-                <div class="p-grid p-fluid ">
-                    <div class="p-col-4 cardIcon">
-                        <img src="../../assets/images/maverick-transport-icon.png" alt="">
-                    </div>
-                    <div class="p-col-7 cardTitle">
-                        Traffic, Transport and Parking Management
-                    </div>
-                    <div class="p-col-12 cardDescription">
-                        <p>
-                            With the siginficant growth of cities regionally arises the need for 
-                            Traffic and Transport systems that a flexible and adaptable. At MSC we
-                            are to provide installation and maintenance services including the 
-                            equipment
-                        </p>
-                        <div class="more"><a routerLink="">Find out more >></a></div>
-                    </div>
-                </div>
-            </p-card>
         </div>
-    </p-card>
+
+        <div class="p-col-3 p-grid p-fluid serviceCard">
+            <div class="p-col-4 image">
+                <img src="../../assets/images/home/maverick-home-auto-icon.png" alt="">
+            </div>
+
+            <div class="p-col-8 title">
+                Home & Building Automation
+            </div>
+
+            <div class="p-col-12 description">
+                We also provide Home and Building Automation solutions. This includes but
+                not limited to Smart Home Systems and Office Solutions. This involves automation
+                 of every aspect of a building including lighting, air conditioning, 
+                 motorized curtains e.t.c.
+            </div>
+
+        </div>
+
+        <div class="p-col-3 p-grid p-fluid serviceCard">
+            <div class="p-col-4 image">
+                <img src="../../assets/images/home/maverick-security-icon-1.png" alt="">
+            </div>
+
+            <div class="p-col-8 title">
+                Safety & Security Solutions
+            </div>
+
+            <div class="p-col-12 description">
+                We also provide Home and Building Automation solutions. This includes but
+                not limited to Smart Home Systems and Office Solutions. This involves automation
+                 of every aspect of a building including lighting, air conditioning, 
+                 motorized curtains e.t.c.
+            </div>
+
+        </div>
+
+        <div class="p-col-3 p-grid p-fluid serviceCard">
+            <div class="p-col-4 image">
+                <img src="../../assets/images/home/maverick-transport-icon.png" alt="">
+            </div>
+
+            <div class="p-col-8 title">
+                Traffic, Transport and Parking Management
+            </div>
+
+            <div class="p-col-12 description">
+                With the siginficant growth of cities regionally arises the need for 
+                Traffic and Transport systems that a flexible and adaptable. At MSC we
+                are to provide installation and maintenance services including the 
+                equipment
+            </div>
+
+        </div>
+    </section>
+
+    <!--Alternative view for the serviceSection -->
+    <section class="servicesSectionAlt ">
+        <div class="servicesCardAlt">
+            
+            <a routerLink = "/services/engineering">
+                <div class="imageAlt">
+                    <img src="../../assets/images/home/maverick-eng-icon.png" alt="Engineering icon">
+                </div>
+                <div class="titleAlt">
+                    Engineering
+                </div>
+            </a>
+            
+
+            <div class="descriptionAlt">
+                
+                    We at MCS provide Engineering services including Instrumentation and Control,
+                            Automation and Control, LT reticulation and Panel Building as well as
+                            Industrial Lighting.
+                
+            </div>
+        </div>
+
+        <div class="servicesCardAlt">
+
+            <a routerLink = "/services/automation">
+                <div class ="imageAlt">
+                    <img src="../../assets/images/home/maverick-home-auto-icon.png" alt="">
+                </div>
+                <div class="titleAlt">
+                    Home & Building Automation
+                </div>
+            </a>
+            
+
+            <div class="descriptionAlt">
+                We also provide Home and Building Automation solutions. This includes but
+                not limited to Smart Home Systems and Office Solutions. This involves automation
+                 of every aspect of a building including lighting, air conditioning, 
+                 motorized curtains e.t.c.
+            </div>
+        </div>
+
+        <div class="servicesCardAlt">
+
+            <a routerLink = "/services/security">
+                <div class="imageAlt">
+                    <img src="../../assets/images/home/maverick-security-icon-1.png" alt="security icon">
+                </div>
+                <div class="titleAlt">
+                    Safety & Security Solutions
+                </div>
+            </a>
+            
+
+            <div class="descriptionAlt">
+                We also provide Home and Building Automation solutions. This includes but
+                not limited to Smart Home Systems and Office Solutions. This involves automation
+                 of every aspect of a building including lighting, air conditioning, 
+                 motorized curtains e.t.c.
+            </div>
+        </div>
+
+        <div class="servicesCardAlt ">
+            <div class="imageAlt">
+                <img src="../../assets/images/home/maverick-transport-icon.png" alt="transparent icon">
+            </div>
+            <div class="titleAlt">
+                Traffic, Transport and Parking Management
+            </div>
+
+            <div class="descriptionAlt">
+                With the siginficant growth of cities regionally arises the need for 
+                Traffic and Transport systems that a flexible and adaptable. At MSC we
+                are to provide installation and maintenance services including the 
+                equipment
+            </div>
+        </div>
+
+
+    </section>
     
 </div>

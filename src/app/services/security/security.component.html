@@ -3,28 +3,33 @@
     <!--Quick Navigation Panel -->
     <nav class="p-col-12 p-grid p-fluid p-jc-center navigationPanel">
            
-        <a href="" class="p-col-3 quickLink">
-            <div class="linkImage control">
+        <a routerLink ="/services/security" class="p-col-3 quickLink"
+            routerLinkActive = "active" >
+
+            <div class="linkImage security">
 
             </div>
-            <p>Instrumentation and Control</p>
+            <p>Safety & Security</p>
         </a>
 
-        <a href="" class="p-col-3 quickLink">
+        <a routerLink ="/services/automation" routerLinkActive = "active"
+            class="p-col-3 quickLink">
             <div class="linkImage automation">
 
             </div>
-            <p>Motor Control and Automation</p>
+            <p>Home & Building Automation</p>
         </a>
 
-        <a href="" class="p-col-3 quickLink">
-            <div class="linkImage panel">
+        <a routerLink ="/services/engineering" routerLinkActive = "active" 
+            class="p-col-3 quickLink">
+            <div class="linkImage control">
 
             </div>
-            <p>Electrical LT Reticulation</p>
+            <p>Instrumentation & Process Control</p>
         </a>
 
-        <a href="" class="p-col-3 quickLink ">
+        <a routerLink = "/services/engineering" routerLinkActive = "active" 
+            class="p-col-3 quickLink ">
             <div class="linkImage engineering">
 
             </div>
@@ -50,7 +55,7 @@
 
     </section>
     <!--Perimeter Protection -->
-    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="perimeterProtection">
         <div class="p-col-6 imageBox eGate">
             
         </div>
@@ -93,7 +98,7 @@
     </section>
 
     <!-- Access Control Info -->
-    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="accessControl">
         <div class="p-col-6 imageBox accessControl">
             
         </div>
@@ -111,87 +116,218 @@
         </div>
     </section>
 
-
-
-
-
-
-    <!-- Perimeter Protection 
-    <div class="p-col-12 p-grid p-fluid p-jc-between infoCard">
-        <div class="p-col-12 infoBox  extraInfo">
-            <div class="nameBox h1">
-                Perimeter Proctection
-            </div>
-            MCS provides vehicle Parking Control systems, services and solutions. We offer reliable and 
-            inter operable security options to control access, promote privacy, increase security, and 
-            enhance property value. Our perimeter protection solutions are used to secure property 
-            boundaries and better manage movement in and out of your place of business or residence, 
-            while allowing easy access for authorized personnel and visitors.
-        </div>
-        <div class="p-col-8 imageBox eGate">
+     <!-- Electronic Access Control Info -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+        <div class="p-col-6 imageBox eAccessControl">
             
         </div>
-        <div class="p-col-4 infoBox">
+        <div class="p-col-6 p-fluid infoBox">
             <div class="nameBox">
-                Security and Electronic Gates
+                Electronic Access Control
             </div>
-            Our subject matter experts design, install, and commission a full spectrum of solutions to 
-            include: Gate Automation, photo-electric sensors, automobile access systems, outdoor video 
-            and more in order to improve your security and manage traffic flow. Our tailored parking 
-            control solutions and Electronic Gates are suitable for commercial, industrial, residential, and 
-            government facilities.
-
+            Intelligent solutions for controlling access to your facilities. We put a range of electronic 
+            access control solutions at your fingertips so you can control who has access to your offices, 
+            facilities and operations. Beyond simply allowing you to manage access, electronic access 
+            control provides valuable business intelligence too - allowing you to know who is entering 
+            and leaving your facilities, time and duration of visit, and providing a reliable record of 
+            activity relating to facility access.
         </div>
+    </section>
 
-        <div class="p-col-12 infoBox extraInfo">
-            MCS offers free consultations to determine your level of security and privacy requirements. 
-            As a result, we determine the most suitable type of Security Gates and access control system 
-            to meet your day-to-day needs. Solutions include:
-            <ul class="list">
-                <li>Keypad Access</li>
-                <li>Remote control Access from vehicle</li>
-                <li>Card Reader Access</li>
-                <li>Safety Loops and Detectors</li>
-                <li>Monitor and Control Visitors and deliveries through CCTV or software packages</li>
-                <li>Intercom or Telephone Communication Systems</li>
-            </ul>
-        </div>
-        
-    </div>
-
-    Electrical LT reticulation and Panel building 
-    <div class="p-col-12 p-grid p-fluid p-jc-between infoCard">
-        <div class="p-col-8 imageBox cctv">
+     <!-- Biometric Access Control Info -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="biometrics">
+        <div class="p-col-6 imageBox biometrics">
             
         </div>
-        <div class="p-col-4 infoBox">
+        <div class="p-col-6 p-fluid infoBox">
             <div class="nameBox">
-                Surveillance and Access Control Systems
+                Biometrics
             </div>
-            We design, install and maintain customized security systems that integrate physical security 
-            devices, electronic technology, and information (IT) systems with operational systems such 
-            as building automation and human resources. This convergent approach streamlines 
-            management and increases capabilities. As an independent systems integrator, we remain 
-            vendor-neutral and clearly focused on providing the right solution for each client, whether 
-            they need a complete turnkey solution, technical services or consulting services.
+            The ultimate in unobtrusive, individualized, user friendly access. Let us help you move 
+            beyond access control cards and keypads with a sophisticated biometrics access control 
+            solution that enhances the security of your facilities and people. By installing fingerprint, iris 
+            and facial identification systems, we can help you deploy the most advanced, secure and 
+            personalized solutions in access control.
         </div>
-    
-    </div>
+    </section>
 
-    Automation and Motor Control
-    <div class="p-col-12 p-grid p-fluid p-jc-between infoCard">
-        <div class="p-col-8 imageBox automation">
+    <!-- Biometric Access Control Info -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+        <div class="p-col-6 imageBox hostedAccessControl">
             
         </div>
-        <div class="p-col-4 infoBox">
+        <div class="p-col-6 p-fluid infoBox">
             <div class="nameBox">
-                Automation and Motor Control     
+                Hosted Access Control
             </div>
-            PLC, HMI, SCADA and DCS control, let our team design 
-            and implement the correct solution for your business.
+            The power of electronic access control, with the ease of a web browser. We can help you 
+            leverage the power of the Internet to better manage access to all of your facilities. MCS offers 
+            access control solutions using Internet-ready panels to connect single, multiple and remote 
+            facilities or entry points. Because these solutions are web-based, software updates and IT 
+            maintenance are a thing of the past.
+
         </div>
-        
-    </div>
-    -->
+    </section>
+
+    <!-- Physical Security Solutions Info -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+        <div class="p-col-6 imageBox hostedAccessControl">
+            
+        </div>
+        <div class="p-col-6 p-fluid infoBox">
+            <div class="nameBox">
+                Physical Security Solutions
+            </div>
+            Fortify your facilities with a range of physical protection solutions. To enhance the security 
+            of critical or vulnerable facilities, we offer installation of physical access control structures to 
+            protect against unauthorized people, vehicles and other threats.
+            We offer access control solutions for every security need including:
+
+        </div>
+    </section>
+
+    <!-- Security Solutions Lists -->
+    <section class="p-col-12 p-grid p-fluid intro">
+        <ul class="p-col-6 list">
+            <li>Card Key Systems</li>
+            <li>Sally Ports</li>
+            <li>Keypad Access</li>
+            <li>Electronic Gates and Fences</li>
+            <li>Visitor Management Systems</li>
+        </ul>
+
+        <ul class="p-col-6 list">
+            <li>Web and PC based Access Control Systems</li>
+            <li>Biometric Systems</li>
+            <li>Keyless Push button Locks</li>
+            <li>Eletric Locking Systems</li>
+            <li>Standalone Single door Systems</li>
+        </ul>
+
+    </section>
+
+    <!-- Video Survaillance Intro -->
+    <section class="p-col-12 intro" id="videoSurveillance">
+        <h1 class="heading">
+            Video Surveillance Camera Systems
+        </h1>
+
+        <p class="intro">
+            Video Surveillance Camera Systems can be effective crime deterrents and provide valuable 
+            insight and documentation for businesses. As a leading integrator of security solutions for 
+            businesses, MCS can install an effective security camera system that provides visibility over 
+            your entire facility to keep your property and employees secure. In addition, video 
+            surveillance systems or CCTV provide records of key events for documentation and 
+            investigative purposes.
+        </p>
+    </section>
+
+    <!-- Video Surveillance  Info -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+        <div class="p-col-6 imageBox videoSurveillance">
+            
+        </div>
+        <div class="p-col-6 p-fluid infoBox">
+            <div class="nameBox">
+                Video Surveillance Camera Systems
+            </div>
+            We install wired and wireless IP cameras, monitors, Digital Video 
+            Recorders (DVRs), Network Video Recorders (NVRs) and more from many of the top 
+            companies in the industry including Honeywell, Dahua , Bosch, Pelco, HIKVision, and 
+            others, which ensures that our clients’ Video Surveillance Cameras systems are reliable and 
+            meet their facilities’ unique video surveillance needs.
+        </div>
+    </section>
+
+     <!-- Video Survaillance extras -->
+     <section class="p-col-12 intro">
+        <p class="intro">
+            MCS can integrate all aspects of your video security system for a complete video surveillance 
+            solution.Whether protecting one facility or hundreds of locations, we offer complete service 
+            in the design, installation, maintenance and support of both newly installed and existing video 
+            security systems or CCTV. Our solutions help you put the right cameras in the right places, 
+            with the ability to monitor, record and manage your video operations. These integrated 
+            solutions offer flexible management, including the ability to view the activity on your 
+            cameras from any web-enabled smart phone or tablet.
+        </p>
+    </section>
+
+    <!-- CCTV Camera  Info -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+        <div class="p-col-6 imageBox cctvCamera">
+            
+        </div>
+        <div class="p-col-6 p-fluid infoBox">
+            <div class="nameBox">
+                Video Cameras
+            </div>
+            The most powerful video solutions, with the right cameras for any installation. From the 
+            smallest video surveillance cameras, to the most robust HD systems. DH Security Solutions 
+            offers a complete spectrum of video cameras, along with the expertise to put the right 
+            cameras in the right places to address all of your video security needs. With cameras suited 
+            for every type of environment, we provide solutions tailored to your unique operations.
+        </div>
+    </section>
+
+    <!-- CCTV Monitor  Info -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+        <div class="p-col-6 imageBox cctvMonitor">
+            
+        </div>
+        <div class="p-col-6 p-fluid infoBox">
+            <div class="nameBox">
+                CCTV Video Monitoring
+            </div>
+            Solutions that fit your network, specifications and budget. From the simplest analog video 
+            monitors, to the highest-resolution HD displays, we design, install and integrate video 
+            monitoring solutions that incorporate your existing systems and enhance your monitoring 
+            operations. With extensive video monitoring options, coupled with the latest image 
+            processing and management tools, we help improve the way you manage and monitor all 
+            aspects of video surveillance.
+        </div>
+    </section>
+
+     <!-- Video Survaillance Intro -->
+     <section class="p-col-12 intro">
+        <h1 class="heading">
+            Fire Suppression Systems
+        </h1>
+
+        <p class="intro">
+            MCS offers code-compliant Fire Suppression Systems that provide smoke and fire 
+            detection, sprinkler supervision, and emergency communications to significantly reduce the 
+            risks of fire-related damages to your business. We can provide complete turn-key fire alarm 
+            system design, installation, service, test and inspection, and monitoring solutions to meet 
+            your Fire Alarm Systems and Fire Detection needs.
+        </p>
+    </section>
+
+    <!-- CCTV Monitor  Info -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard">
+        <div class="p-col-6 imageBox fireDetection">
+            
+        </div>
+        <div class="p-col-6 p-fluid infoBox">
+            <div class="nameBox">
+                Fire Detection
+            </div>
+            Automatic fire detection – We can install code-compliant early detection and advance point 
+            ID fire alarm technology that can quickly recognize the signs of a fire, allowing our team to 
+            alert the local authorities and activate intelligent initiating and indicating devices that will 
+            warn your staff and guide them to safety
+        </div>
+    </section>
+
+    <!-- Fire Detection extras -->
+    <section class="p-col-12 intro">
+        <p class="intro">
+            For larger buildings where fire evacuations can be complicated, MCS can offer a variety of 
+            advanced capabilities. When our code-compliant alarm systems detect fires, they will not 
+            only alert authorities, but also activate the building’s life safety evacuation and 
+            communications systems. This can provide a crucial channel between first responders and 
+            your building occupants, ensuring enhanced safety for all involved
+        </p>
+    </section>
+  
 
 </div>

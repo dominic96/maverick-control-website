@@ -1,8 +1,7 @@
 div.aboutUsContainer{
     padding-top: 5%;
     background-color: #8b8b8b;
-    width: 1293px;
-    height: 700px;
+    height: fit-content;
 }
 
 header{
@@ -12,6 +11,64 @@ header{
     border-bottom: 1px solid white;
 }
 
-div.contactInfoContainer{
-    border-left: 1px solid white;
+div.companyInfo{
+    align-items: center;
 }
+
+p.heading{
+
+    color: #4baaf5;
+    font-size: 36px;
+}
+
+p.overview{
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+div.infoBox{
+    color: white;
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+ul.list{
+    margin-top: 0px;
+}
+
+li.overview{
+    
+    margin-left: 35%;
+    width: fit-content;
+}
+
+p.mission{
+  
+    text-align: left;
+}
+
+img.infoImage{
+    width: 100px;
+    height: 100px;
+    margin-top: 36px;
+}
+
+p.vision, p.values{
+    margin-top: 50px;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+h1{
+    font-size: 24px;
+}
+
+
+li.values{
+    text-align: start;
+    margin-left: 20%;
+}
+

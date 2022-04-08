@@ -1,6 +1,6 @@
 <div class="servicesContainer">
     <header>
-    Our Services 
+        Our Services 
     </header>
     <!--Loaded components (pages) appear here-->
     <router-outlet></router-outlet>
@@ -10,24 +10,102 @@
     </footer>
 
     <section class="p-grid p-fluid p-jc-between moreServices">
-        <div class="p-col-4 serviceCard biometrics">
-            <p class="serviceGroupName">Safety and Secuity</p>
-            <p class="name">Biometric Security Systems</p>
 
-        </div>
+        <!-- Security Section -->
+        <div class="p-col-12 p-grid p-fluid p-jc-center security">
 
-        <div class="p-col-4 serviceCard">
+            <a routerLink ="/services/security" fragment = "biometrics" >
+                <div class="p-col-4 serviceCard biometrics">
+                    <p class="serviceGroupName">Safety and Secuity</p>
+                    <p class="name">Biometric Security Systems</p>
         
-            service 2 
+                </div>
+            </a>
+
+            <a routerLink = "/services/security" fragment = "videoSurveillance" >
+                <div class="p-col-4 serviceCard videoSurveillance">
+                    <p class="serviceGroupName">Safety and Secuity</p>
+                    <p class="name">Video Surveillance</p>
+        
+                </div>
+    
+            </a>
+            
+            <a routerLink = "/services/security" fragment = "accessControl" >
+                <div class="p-col-4 serviceCard accessControl">
+                    <p class="serviceGroupName">Safety and Secuity</p>
+                    <p class="name">Access Control</p>
+        
+                </div>
+            </a>
+
+            <a routerLink = "/services/security" fragment = "perimeterProtection" >
+                <div class="p-col-4 serviceCard perimeterProtection">
+                    <p class="serviceGroupName">Safety and Secuity</p>
+                    <p class="name">Perimeter Protection</p>
+        
+                </div>
+            </a>
+
         </div>
 
-        <div class="p-col-4 serviceCard">
-            service 3 
+        <!-- Home Automation Section -->
+        <div class="p-col-12 p-grid p-fluid p-jc-center homeAutomation">
 
-        </div>
-        <div class="p-col-4 serviceCard">
-            service 4 
+            <a routerLink = "/services/automation" fragment = "smartHome" >
+                <div class="p-col-4 serviceCard home">
+                    <p class="serviceGroupName">Home & Building Automation</p>
+                    <p class="name">Smart Home</p>
+        
+                </div>
+            </a>
 
+            <a routerLink = "/services/automation" fragment = "smartOffice" >
+                <div class="p-col-4 serviceCard office">
+                    <p class="serviceGroupName">Home & Building Automation</p>
+                    <p class="name">Smart Office</p>
+        
+                </div>
+            </a>
+            
+            <a routerLink ="/services/automation" fragment = "smartHotel" >
+                <div class="p-col-4 serviceCard building">
+                    <p class="serviceGroupName">Home & Building Automation</p>
+                    <p class="name">Smart Hotel</p>
+        
+                </div>
+            </a>
+        
         </div>
+
+        <div class="p-col-12 p-grid p-jc-center engineering">
+
+            <a routerLink ="/services/engineering" fragment = "control" >
+                <div class="p-col-4 serviceCard controlInstr">
+                    <p class="serviceGroupName">Engineering</p>
+                    <p class="name">Control & Instrumentation</p>
+        
+                </div>
+            </a>
+
+            
+            <a routerLink ="/services/engineering" fragment = "motorControl">
+                <div class="p-col-4 serviceCard automationMotor">
+                    <p class="serviceGroupName">Engineering</p>
+                    <p class="name">Automation & Motor Control</p>
+        
+                </div>
+            </a>
+            
+            <a routerLink = "/services/engineering" fragment = "panel">
+                <div class="p-col-4 serviceCard electricalPanel">
+                    <p class="serviceGroupName">Engineering</p>
+                    <p class="name">Electrical LT Reticulation ...</p>
+        
+                </div>
+            </a>
+            
+        </div>
+          
     </section>
 </div>

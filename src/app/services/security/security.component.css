@@ -11,9 +11,21 @@ header{
 
 /************************ Quick Link Styles **********************************/ 
 a.quickLink{
+    
+    color: #424242;
     min-width: 200px;
     display: inline-flex;
+    text-decoration: none;
 }
+
+a:hover{
+    background-color: #EEEEEE;
+}
+
+a.active{
+    color: #4baaf5;
+}
+
 
 p{
     display: inline-flex;
@@ -40,12 +52,12 @@ div.control{
 }
 
 div.automation{
-    background-image: url("../../../assets/images/thumbnails/automation-thumbnail.png");
+    background-image: url("../../../assets/images/thumbnails/home-automation-thumbnail-1.png");
 
 }
 
-div.panel{
-    background-image: url("../../../assets/images/thumbnails/electrical-panel-thumbnail.png");
+div.security{
+    background-image: url("../../../assets/images/thumbnails/security-and-safety-thumbnail.png");
 
 }
 
@@ -81,12 +93,25 @@ p.intro{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+ul.list{
+    font-size: 20px;
+    min-width: 400px;
+    margin-top: 0px;
+    font-weight: 500;
+    padding-left: 54px;
+    text-align: justify;
+    align-content: center;
+    color: rgb(173, 172, 172);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
 /************** Section Styles *******************************/
-div.infoCard{
+section.infoCard{
     margin-top: 2%;
     padding-bottom: 2%;
-    border-bottom: 1px solid #424242;
-    background-color: lightgray;
+     /*border-bottom: 1px solid #424242;*/
+    /*background-color: lightgray;*/
 
 }
 
@@ -111,7 +136,7 @@ div.nameBox{
 }
 
 div.infoBox{
-    padding-top: 5%;
+    padding-top: 4%;
     text-align: justify;
     font-size: normal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -134,3 +159,32 @@ div.accessControl{
     height: 300px;
 }
 
+div.biometrics{
+    background-image: url("../../../assets/images/services/biometrics-services-pic-dark.png");
+    width: 400px;
+    height: 300px;
+}
+
+div.videoSurveillance{
+    background-image: url("../../../assets/images/security/cctv-surveillance-pic.jpg");
+    width: 400px;
+    height: 300px;
+}
+
+div.cctvCamera{
+    background-image: url("../../../assets/images/security/cctv-camera-pic.jpg");
+    width: 400px;
+    height: 300px;
+}
+
+div.cctvMonitor{
+    background-image: url("../../../assets/images/security/cctv-monitor-pic.jpg");
+    width: 400px;
+    height: 300px;
+}
+
+div.fireDetection{
+    background-image: url("../../../assets/images/security/fire-detection-pic.jpg");
+    width: 400px;
+    height: 300px;
+}

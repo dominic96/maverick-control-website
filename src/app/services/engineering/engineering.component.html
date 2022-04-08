@@ -1,55 +1,112 @@
 <div class="p-grid p-jc-center engineeringContainer">
+
+    <!--Quick Navigation Panel -->
+    <nav class="p-col-12 p-grid p-fluid p-jc-center navigationPanel">
+           
+        <a routerLink ="/services/engineering" fragment = "control"  routerLinkActive = "active" class="p-col-3 quickLink">
+            <div class="linkImage control">
+
+            </div>
+            <p>Instrumentation & Process Control</p>
+        </a>
+
+        <a routerLink = "/services/automation" routerLinkActive = "active" class="p-col-3 quickLink">
+            <div class="linkImage automation">
+
+            </div>
+            <p>Home & Automation</p>
+        </a>
+
+        <a routerLink = "/services/security" routerLinkActive = "active" 
+            class="p-col-3 quickLink">
+
+            <div class="linkImage panel">
+
+            </div>
+            <p>Safety & Security</p>
+        </a>
+
+        <a routerLink = "/services/engineering" routerLinkActive = "active" class="p-col-3 quickLink ">
+            <div class="linkImage engineering">
+
+            </div>
+            <p>Engineering</p>
+        </a>
+
+    </nav>
+
+
     <!--BLocks of information about the engineering department-->
     <header class="p-col-12">Engineering</header>
 
+    <!-- Engineering Intro -->
+    <section class="p-col-12 intro">
+        <h1 class="heading">
+            Electrical & Industrial Automation Division
+        </h1>
+
+        <p class="intro">
+            Maverick Control Systems offers a complete range of electrical project management services; 
+            Engineering, Equipment supply and installation, Commissioning, Operations and 
+            Maintenance.
+            MCS believes that engineering is the first step on the road to successful completion of a 
+            project and its quality can greatly affect the final outcome regardless of project size. Our 
+            services cover all facets of the project lifecycle from feasibility through to installation, 
+            migration and plant upgrades.
+            Our services include;
+        </p>
+    </section>
+
     <!--Instrumentation and Control -->
-    <div class="p-col-12 p-grid p-fluid p-jc-between infoCard">
-        <div class="p-col-8 imageBox control">
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="control">
+        <div class="p-col-6 imageBox controlInstrumentation">
             
         </div>
-        <div class="p-col-4 infoBox">
+        <div class="p-col-6 p-fluid infoBox">
             <div class="nameBox">
-                Instrumentation and Control
+                Instrumentation & Control
             </div>
             We offer our clients instrumentation design, supply, 
-                installation, calibration and software integration services 
-                allowing their infrastructure to achieve maximum process 
-                results. We offer services across a range of applications 
-                including flow, pressure, temperature, vibration, level, 
-                density, viscosity, wireless and HART control.
+            installation, calibration and software integration services 
+            allowing their infrastructure to achieve maximum process 
+            results. We offer services across a range of applications 
+            including flow, pressure, temperature, vibration, level, 
+            density, viscosity, wireless and HART control.
         </div>
-        
-    </div>
+    </section>
 
-    <!--Electrical LT reticulation and Panel building -->
-    <div class="p-col-12 p-grid p-fluid p-jc-between infoCard">
-        <div class="p-col-8 imageBox panels">
+    
+    <!-- Electrical Reticulation & panel Building  -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="panel">
+
+        
+        <div class="p-col-6 imageBox electricalPanel">
             
         </div>
-        <div class="p-col-4 infoBox">
+        <div class="p-col-6 p-fluid infoBox">
             <div class="nameBox">
-                Electrical LT reticulation and Panel building
+                Electrical LT Reticulation & Panel Building
             </div>
             Electrical maintenance services incorporating labour hire, 
             electrical design and drawing, LT reticulation, cable sizing, 
             laying and panel building are all MCS's specialty.
         </div>
-    
-    </div>
+    </section>
 
-    <!---Automation and Motor Control-->
-    <div class="p-col-12 p-grid p-fluid p-jc-between infoCard">
-        <div class="p-col-8 imageBox automation">
+
+    <!-- Automation & Motor Control  -->
+    <section class="p-col-12 p-grid p-fluid p-jc-center infoCard" id="motorControl">
+        <div class="p-col-6 imageBox automationMotor">
             
         </div>
-        <div class="p-col-4 infoBox">
+        <div class="p-col-6 p-fluid infoBox">
             <div class="nameBox">
-                Automation and Motor Control     
+                Automation & Motor Control
             </div>
             PLC, HMI, SCADA and DCS control, let our team design 
             and implement the correct solution for your business.
         </div>
-        
-    </div>
+    </section>
+
 
 </div>

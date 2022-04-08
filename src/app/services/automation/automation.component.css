@@ -15,8 +15,19 @@ header{
 
 a.quickLink{
     min-width: 200px;
+    color: #424242;
     display: inline-flex;
+    text-decoration: none;
 }
+
+a:hover{
+    background-color: #EEEEEE;
+}
+
+a.active{
+    color: #4baaf5;
+}
+
 
 p{
     display: inline-flex;
@@ -43,12 +54,12 @@ div.control{
 }
 
 div.automation{
-    background-image: url("../../../assets/images/thumbnails/automation-thumbnail.png");
+    background-image: url("../../../assets/images/thumbnails/home-automation-thumbnail-1.png");
 
 }
 
-div.panel{
-    background-image: url("../../../assets/images/thumbnails/electrical-panel-thumbnail.png");
+div.security{
+    background-image: url("../../../assets/images/thumbnails/security-and-safety-thumbnail.png");
 
 }
 
@@ -61,8 +72,7 @@ div.engineering{
 div.infoCard{
     margin-top: 2%;
     padding-bottom: 2%;
-    border-bottom: 1px solid #424242;
-    background-color: lightgray;
+   
 
 }
 
@@ -105,13 +115,13 @@ div.home{
 }
 
 div.hotel{
-    background-image: url("../../../assets/images/maverick-home-automation-pic-small.jpg");
+    background-image: url("../../../assets/images/automation/smart-hotel.jpg");
     width: 400px;
     height: 300px;
 }
 
 div.office{
-    background-image: url("../../../assets/images/building-automation-home-300x182.png");
+    background-image: url("../../../assets/images/automation/smart-office.jpg");
     width: 400px;
     height: 300px;
 }

@@ -19,6 +19,16 @@ footer{
     color: #607d8b;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    box-shadow: gray;
+    background-color: aliceblue;
+
+}
+
 section.moreServices{
     margin-left: 8px;
     margin-top: 8px;
@@ -36,34 +46,105 @@ div.serviceCard{
     
 
 }
+
+div.serviceCard:hover{
+    opacity: 0.5;
+    background-color: aliceblue;
+}
+
 p.serviceGroupName{
-    width: 350px;
+    width: 102%;
     opacity: 0.5;
     color: white;
     font-size: 24px;
     margin-top: 0px;
     padding: 0px 0px;
-    margin-left: -8px;
     border-radius: 5px;
     background-color: grey;
 
 }
 
 p.name{
+    width: 100%;
     opacity: 0.5;
-    width: 250px;
-    font-size: 20px;
-    margin-top: 240px;
+    font-size: 28px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 1px;
     border-radius: 8px;
     text-align: center;
     color: aliceblue;
     background-color: grey;
-    border: 1px solid white;
+   /* border: 1px solid white;*/
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 
 }
 
+/***** Security *****************************/
 div.biometrics{
     background-image: url("../../assets/images/services/biometrics-services-pic-dark.png");
+    width: 400px;
+    height: 150px;
 }
+
+div.videoSurveillance{
+    background-image: url("../../assets/images/security/cctv-camera-pic.jpg");
+    width: 400px;
+    height: 150px;
+
+}
+
+div.accessControl{
+    background-image: url("../../assets/images/security/access-control-pic.jpg");
+    width: 400px;
+    height: 150px;
+}
+
+div.perimeterProtection{
+    background-image: url("../../assets/images/security/electronic-gate.jpg");
+    height: 150px;
+    width: 400px;
+}
+
+
+/**** Engineering ***/
+div.controlInstr{
+    background-image: url("../../assets/images/engineering/control-isntr-pic.jpg");
+    width: 400px;
+    height: 150px;
+}
+
+div.automationMotor{
+    background-image: url("../../assets/images/engineering/automation-motor-pic.jpg");
+    width: 400px;
+    height: 150px;
+}
+
+div.electricalPanel{
+    background-image: url("../../assets/images/engineering/electrical-panel-pic.jpg");
+    width: 400px;
+    height: 150px;
+}
+
+
+/****** Home Automation ********************/
+div.home{
+    background-image: url("../../assets/images/automation/maverick-home-automation-pic-small.jpg");
+    width: 400px;
+    height: 150px;
+}
+
+div.office{
+    background-image: url("../../assets/images/automation/smart-office.jpg");
+    width: 400px;
+    height: 150px;
+}
+
+div.building{
+    background-image: url("../../assets/images/automation/smart-hotel.jpg");
+    width: 400px;
+    height: 150px;
+}
+
