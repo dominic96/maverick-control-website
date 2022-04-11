@@ -1,37 +1,39 @@
+<div class="headerContainer p-grid p-fluid p-jc-between">
+    <div class="logoContainer p-col-4">
+
+    </div>
+    
+    <!--Navigation Links-->
+    <nav class="menuButtonsContainer p-grid p-fluid p-col-7  p-jc-end">
+        <a routerLink = "/home" routerLinkActive = "active" class="p-col-2 headerLink">
+            Home
+        </a>
+
+        <a routerLink="/services/engineering" routerLinkActive = "active" class="p-col-2 headerLink" >
+            Engineering
+        </a>
+
+        <a routerLink = "/services/automation" routerLinkActive = "active" class="p-col-2 headerLink">
+            Automation
+        </a>
+
+        <a routerLink="/services/security" routerLinkActive = "active" class="p-col-2 headerLink">
+            Security
+        </a>
+
+        <a  routerLink = "/about/maverick" routerLinkActive = "active" class="p-col-2 headerLink">
+            About Us
+        </a>
+
+
+    </nav>
+
+   
+</div>
+
 <div class="landingPageContainer">
     <!--Logo container-->
-    <div class="headerContainer p-col-12 p-grid p-fluid p-jc-between">
-        <div class="logoContainer p-col-4">
-
-        </div>
-        
-        <!--Navigation Links-->
-        <nav class="menuButtonsContainer p-grid p-fluid p-col-7  p-jc-between">
-            <a routerLink = "/home" routerLinkActive = "active" class="p-col-2 headerLink">
-                Home
-            </a>
-
-            <a routerLink="/services/engineering" routerLinkActive = "active" class="p-col-2 headerLink" >
-                Engineering
-            </a>
-
-            <a routerLink = "/services/automation" routerLinkActive = "active" class="p-col-2 headerLink">
-                Automation
-            </a>
-
-            <a routerLink="/services/security" routerLinkActive = "active" class="p-col-2 headerLink">
-                Security
-            </a>
-
-            <a  routerLink = "/about/maverick" routerLinkActive = "active" class="p-col-2 headerLink">
-                About Us
-            </a>
-
-
-        </nav>
-
-       
-    </div>
+    
 
     <div class="contentContainer">
         <!--Routing to various Elements -->
@@ -60,15 +62,15 @@
                 Security Solutions
             </a>
 
-            <a href="" class=" footerLink">
+            <a routerLink ="/services/engineering" fragment = "control" class=" footerLink">
                 Instrumentation & Control
             </a>
 
-            <a href="" class=" footerLink">
+            <a routerLink ="/services/security" frgment = "fire" class=" footerLink">
                 Fire Detection & Supression
             </a>
 
-            <a href="" class=" footerLink">
+            <a routerLink ="services/security" fragment = "accessControl" class=" footerLink">
                 Surveillance & Access Control
             </a>
 

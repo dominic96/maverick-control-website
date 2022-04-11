@@ -1,32 +1,41 @@
 div.landingPageContainer{
-    width: 100%;
+    width: 98%;
     height: auto;
+    background-color: #ffff;
+
 }
 
 
 div.headerContainer{
-    background-color: #424242;
-   /* position: fixed;*/
-    width: 103%;
     z-index: 100;
+    width: 103.5%;
+   /* min-width: 482px;*/
+    position: -webkit-sticky;
     padding-top: 24px;
     padding-left: 24px;
     padding-right: 16px;
+    padding-bottom: 2px;
+    background-color: #424242;
+
 }
 
 div.logoContainer{
     background-image: url('../assets/images/MAVERIKlogo.png');
+    margin: auto;
     width: 300px;
     height: 100px;
     
 }
 
 div.contentContainer{  
-    width: 100%;
+    width: 102%;
+    /*min-width: 400px;*/
     margin-left: 0px;
+    margin-top: 0.6%;
 }
 
 nav.menuButtonsContainer{
+    margin: auto;
     padding-top: 50px;
 }
 

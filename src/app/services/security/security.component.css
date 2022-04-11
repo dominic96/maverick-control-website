@@ -68,7 +68,7 @@ div.engineering{
 /****************** Intro Section Styles*******************************************/
 
 section.intro{
-    min-width: 500px;
+    min-width: 300px;
     max-width: 1100px;
     padding-left: 8px;
     align-content: center;
@@ -86,16 +86,18 @@ h1{
 p.intro{
     color: rgb(173, 172, 172);
     font-size: 20px;
+    min-width: 300px;
     margin-top: 0px;
     font-weight: 500;
     padding-left: 16px;
+    padding-right: 8px;
     text-align: justify;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ul.list{
     font-size: 20px;
-    min-width: 400px;
+    min-width: 300px;
     margin-top: 0px;
     font-weight: 500;
     padding-left: 54px;
@@ -143,7 +145,7 @@ div.infoBox{
     font-weight: lighter;
     color: #424242;
     max-width: 600px;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 /***** Images Styles ******************************************/
