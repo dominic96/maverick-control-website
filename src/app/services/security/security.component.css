@@ -2,17 +2,22 @@ header{
     text-align: center;
     border-top: 1px  solid lightgrey;
     border-bottom: 1px  solid lightgrey;
-    background-color: #424242;
+    background-color: #c6c6c956;
+    /*background-color: #424242;*/
     font-size: xx-large;
-    color: #607d8b;
+    /*color: #607d8b;*/
+    /*color: #95c9f0bd;*/
+    color: #85b1d3;
     padding-left: -5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 
 }
 
 /************************ Quick Link Styles **********************************/ 
 a.quickLink{
     
-    color: #424242;
+    color: #aaaaad;
     min-width: 200px;
     display: inline-flex;
     text-decoration: none;
@@ -24,6 +29,7 @@ a:hover{
 
 a.active{
     color: #4baaf5;
+    
 }
 
 
@@ -31,9 +37,8 @@ p{
     display: inline-flex;
     padding-top: 20px;
     font-size: small;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 div.linkImage{
@@ -76,6 +81,8 @@ section.intro{
 
 h1{
     color: #607d8b;
+    
+
     font-size: 2em;
     font-weight: 600;
     text-align: center;
@@ -142,7 +149,7 @@ div.infoBox{
     text-align: justify;
     font-size: normal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
     color: #424242;
     max-width: 600px;
     min-width: 300px;

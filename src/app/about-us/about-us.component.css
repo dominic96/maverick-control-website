@@ -1,13 +1,16 @@
 div.aboutUsContainer{
-    padding-top: 5%;
-    background-color: #8b8b8b;
+   /* padding-top: 5%;*/
+    /*background-color: #8b8b8b;*/
+    background-color: white;
     height: fit-content;
+
 }
 
 header{
     text-align: center;
-    padding-bottom: 30px;
+    margin-top: 20px;
     margin-bottom: 8px;
+    padding-bottom: 30px;
     border-bottom: 1px solid white;
 }
 
@@ -70,5 +73,9 @@ h1{
 li.values{
     text-align: start;
     margin-left: 20%;
+}
+
+p.info, ul.list{
+    color: #8b8b8b;
 }
 

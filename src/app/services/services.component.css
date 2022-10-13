@@ -5,7 +5,9 @@ header, footer{
     font-size: 3em;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #607d8b;
+    /*color: #607d8b;*/
+    color: #85b1d3;
+
     
 }
 
@@ -14,9 +16,11 @@ footer{
     margin-bottom: 48px;
     text-align: center;
     font-size: 2em;
-    font-weight: normal;
+    font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #607d8b;
+   /*color: #607d8b;*/
+   color: #85b1d3;
+
 }
 
 a{

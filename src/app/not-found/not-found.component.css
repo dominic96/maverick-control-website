@@ -1,0 +1,14 @@
+div{
+    margin: auto;
+    width: 75%;
+    height: 50%;
+    background-color: #c6c6c956;
+
+}
+
+p{
+    color: gray;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

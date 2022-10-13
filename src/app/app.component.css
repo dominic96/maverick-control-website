@@ -15,7 +15,10 @@ div.headerContainer{
     padding-left: 24px;
     padding-right: 16px;
     padding-bottom: 2px;
-    background-color: #424242;
+    /*background-color: #424242;*/
+
+    background-color: #c6c6c956;
+
 
 }
 
@@ -77,7 +80,9 @@ footer{
 
     width: 103%;
     min-height: 450px;
-    background-color: #424242;
+    /*background-color: #424242;*/
+    background-color: #c6c6c956;
+
 }
 
 div.footerBox{
@@ -94,6 +99,8 @@ div.footerBox{
 div.links{
 
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 a.footerLink{
@@ -101,6 +108,8 @@ a.footerLink{
     display: block;
     margin-top: 8px;
     margin-bottom: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 div.logo{
@@ -115,18 +124,21 @@ img.footerLogo{
 
 p, div.contacts{
     font-size: 12px;
-    color: lightgray;
+    color: #757575;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p.footerText{
     margin-top: 24px;
     text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 p.heading{
     color: #4baaf5;
     font-size: 32px;
+    margin-bottom: 2px;
     border-bottom: 2px solid lightgray;
 }
 
@@ -146,7 +158,20 @@ i{
 div.contact{
     text-align: center;
     align-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
+
+div.phoneContact{
+
+    margin-top: 10px;
+}
+
+a.contactLink{
+    
+}
+
+
 
 div.copyright{
 

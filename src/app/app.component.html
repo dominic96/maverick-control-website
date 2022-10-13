@@ -1,7 +1,8 @@
 <div class="headerContainer p-grid p-fluid p-jc-between">
-    <div class="logoContainer p-col-4">
-
-    </div>
+   <a routerLink="/home" routerLinkActive="active">
+        <div class="logoContainer p-col-4"></div>
+   </a>
+    
     
     <!--Navigation Links-->
     <nav class="menuButtonsContainer p-grid p-fluid p-col-7  p-jc-end">
@@ -40,95 +41,110 @@
         <router-outlet></router-outlet>
     </div>
 
-    <footer class="p-grid p-jc-center" >
-        <div class="p-col-4 footerBox links">
-
-            <p class="heading">Our Services</p>
-
-            
-            <!--Navigation Links in Footer -->
-        <nav class="footerNav">
-            
-
-            <a routerLink="/services/engineering" routerLinkActive = "active" class=" footerLink" >
-                Engineering
-            </a>
-
-            <a routerLink = "/services/automation" routerLinkActive = "active" class="footerLink">
-                Automation
-            </a>
-
-            <a routerLink="/services/security" routerLinkActive = "active" class=" footerLink">
-                Security Solutions
-            </a>
-
-            <a routerLink ="/services/engineering" fragment = "control" class=" footerLink">
-                Instrumentation & Control
-            </a>
-
-            <a routerLink ="/services/security" frgment = "fire" class=" footerLink">
-                Fire Detection & Supression
-            </a>
-
-            <a routerLink ="services/security" fragment = "accessControl" class=" footerLink">
-                Surveillance & Access Control
-            </a>
-
-        </nav>
-
-        </div>
-
-        <div class="p-col-4 p-grid p-jc-center footerBox logo">
-            <img src="../assets/images/MAVERIKlogo.png" alt="maverick control systems logo" class="footerLogo">
-            <p class="footerText">
-                MCS is a company which provides innovative IoT solutions to homes, industrial 
-                and mining sites, commercial and government buildings. MCS combines its 
-                electrical engineering knowledge and technology domain prowess to 
-                undertake turnkey project execution and proffer consulting services.
-            </p>
-
-            <div>
-                <a href="" class="footerLink">About us</a>
-            </div>
-        </div>
-
-        <div class="p-col-4 footerBox contact">
-            <p class="heading">
-                Contact Information
-            </p>
-            <div class="contacts">
-                <i class="pi pi-phone"></i>
-                <span>+263784428659, +263771227689</span>
-            </div>
-
-            <div class="contacts">
-                <i class="pi pi-envelope"></i>
-                <span>maverickconsys@gmail.com</span>
-            </div>
-
-            <div class="contacts">
-                <i class="pi pi-facebook"></i>
-                <span>@maverickconsys</span>
-            </div>
-
-            <div class="contacts">
-                <i class="pi pi-twitter"></i>
-                <span>@maverickconsys</span>
-            </div>
-
-        </div>
-
-        <div class="p-col-12 copyright">
-            <p class="footerText copyright">
-                Maverick Control Systems (PVT) Ltd. | All Rights Reserved 2022
-            </p>
-
-        </div>
-    </footer>
+    
     
 </div>
 
+<footer class="p-grid p-jc-center" >
+    <div class="p-col-4 footerBox links">
 
+        <p class="heading">Our Services</p>
+
+        
+        <!--Navigation Links in Footer -->
+    <nav class="footerNav">
+        
+        <a routerLink="/services/engineering" routerLinkActive = "active" class=" footerLink" >
+            Engineering
+        </a>
+
+        <a routerLink = "/services/automation" routerLinkActive = "active" class="footerLink">
+            Automation
+        </a>
+
+        <a routerLink="/services/security" routerLinkActive = "active" class=" footerLink">
+            Security Solutions
+        </a>
+
+        <a routerLink ="/services/engineering" fragment = "control" class=" footerLink">
+            Instrumentation & Control
+        </a>
+
+        <a routerLink ="/services/security" frgment = "fire" class=" footerLink">
+            Fire Detection & Supression
+        </a>
+
+        <a routerLink ="services/security" fragment = "accessControl" class=" footerLink">
+            Surveillance & Access Control
+        </a>
+
+    </nav>
+
+    </div>
+
+    <div class="p-col-4 p-grid p-jc-center footerBox logo">
+        <img src="../assets/images/MAVERIKlogo.png" alt="maverick control systems logo" class="footerLogo">
+        <p class="footerText">
+            MCS is a company which provides innovative IoT solutions to homes, industrial 
+            and mining sites, commercial and government buildings. MCS combines its 
+            electrical engineering knowledge and technology domain prowess to 
+            undertake turnkey project execution and proffer consulting services.
+        </p>
+
+        <div>
+            <a href="" class="footerLink">About us</a>
+        </div>
+    </div>
+
+    <div class="p-col-4 footerBox contact">
+        <p class="heading">
+            Contact Information
+        </p>
+        <div class="contacts phoneContact">
+            <i class="pi pi-phone"></i>
+            <span>+263772125213, +263774222903</span>
+        </div>
+
+        <div class="contacts">
+            <a href="mailto:maverickconsys@ecoweb.co.zw" class="contactLink">
+                <i class="pi pi-envelope"></i>
+                <span>maverickconsys@ecoweb.co.zw</span>
+            </a>
+        </div>
+
+        <div class="contacts">
+            <a href="mailto:maverickconsys@gmail.com" class="contactLink">
+                <i class="pi pi-envelope"></i>
+            <span>maverickconsys@gmail.com</span>
+            </a>
+            
+        </div>
+
+        <div class="contacts">
+            <a href="https://www.facebook.com/maverickconsys" class="contactLink">
+                <i class="pi pi-facebook"></i>
+                <span>@maverickconsys</span>
+            </a>
+            
+        </div>
+
+        <div class="contacts">
+            <a href="https://twitter.com/maverickconsys" class="contactLink">
+                <i class="pi pi-twitter"></i>
+                <span>@maverickconsys</span>
+            </a>
+           
+        </div>
+
+    </div>
+
+    <div class="p-col-12 copyright">
+        <p class="footerText copyright">
+            Maverick Control Systems (PVT) Ltd. | © All Rights Reserved 2022
+        </p>
+
+    </div>
+</footer>
 
 
 
